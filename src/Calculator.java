@@ -5,6 +5,9 @@ class Calculator {
     public void setNum2(double num2) {this.num2 = num2;}
     public double getNum1(){return num1;}
     public double getNum2(){return num2;}
-
+    public double  Add(){return num1+num2;}
+    public double  Div(){return num1/num2;}
+    public double  Mul(){return num1*num2;}
+    public double  Sub(){return num1-num2;}
 
 }

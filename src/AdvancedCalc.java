@@ -33,3 +33,22 @@ class AdvancedCalc extends Calculator {
                     if (userOption2!=2) {
                         break;
                     }
+                    else if(num2==0) {System.out.println("На ноль делить нельзя, попробуйте снова!");}
+                    else {break;}
+                }
+                switch (userOption2) {
+                    case 1:
+                        System.out.println(cal1.getNum1() + " + " + cal1.getNum2() + "=" + cal1.Add());
+                        break;
+                    case 2:
+                        System.out.println(cal1.getNum1() + " / " + cal1.getNum2() + "=" + cal1.Div());
+                        break;
+                    case 3:
+                        System.out.println(cal1.getNum1() + " - " + cal1.getNum2() + "=" + cal1.Mul());
+                        break;
+                    case 4:
+                        System.out.println(cal1.getNum1() + " * " + cal1.getNum2() + "=" + cal1.Sub());
+                        break;
+                }
+
+                break;

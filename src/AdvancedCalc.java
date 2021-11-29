@@ -52,7 +52,7 @@ class AdvancedCalc extends Calculator {
                 }
 
                 break;
-case 2:
+          case 2:
             System.out.println("\n---------------------------------------");
             System.out.println("Выберите операцию: \n1. \"+\" \n2. \"/\" \n3. \"-\" \n4. \"*\" \n5. доп операция инжинерного калькулятора");
             System.out.println("---------------------------------------");

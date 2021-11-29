@@ -102,3 +102,23 @@ case 2:
 
     }
 }
+public static void showMenu(){
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+        System.out.println("\n---------------------------------------");
+        System.out.println("Выберите пункт меню: \n1. Ввод исходных данных\n2. Выход из программы");
+        System.out.println("\n---------------------------------------");
+        int userOption2 = sc.nextInt();
+        switch(userOption2){
+            case 1:
+                enterData();
+                showMenu();
+                break;
+            case 2:
+
+                return;
+            default:
+                System.out.println("Выберите из пунктов 1-2");
+                showMenu();
+        }
+    }
+}

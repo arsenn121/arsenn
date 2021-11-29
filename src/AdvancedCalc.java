@@ -52,3 +52,53 @@ class AdvancedCalc extends Calculator {
                 }
 
                 break;
+case 2:
+            System.out.println("\n---------------------------------------");
+            System.out.println("Выберите операцию: \n1. \"+\" \n2. \"/\" \n3. \"-\" \n4. \"*\" \n5. доп операция инжинерного калькулятора");
+            System.out.println("---------------------------------------");
+            int userOption3 = sc.nextInt();
+            while (true) {
+                if (userOption3 != 5) {
+                    System.out.println("введите первое число");
+                    num1 = sc.nextDouble();
+                    System.out.println("введите второе число");
+                    num2 = sc.nextDouble();
+                    cal2.setNum1(num1);
+                    cal2.setNum2(num2);
+                    if (userOption3!=2) {
+                        break;
+                    }
+                    else if(num2==0) {System.out.println("На ноль делить нельзя, попробуйте снова!");}
+                    else {break;}
+                } else {
+                    System.out.println("введите градусы");
+                    num1 = sc.nextDouble();
+                    cal2.setNum1(num1);
+                    if (num1>=0 && num1<=360) {
+                        break;
+                    }
+                    else {System.out.println("Вы вышли из диапазано, попробуйте снова!");}
+                }
+
+            }
+            switch (userOption3) {
+                case 1:
+                    System.out.println(cal2.getNum1() + " + " + cal2.getNum2() + "=" + cal2.Add());
+                    break;
+                case 2:
+                    System.out.println(cal2.getNum1() + " / " + cal2.getNum2() + "=" + cal2.Div());
+                    break;
+                case 3:
+                    System.out.println(cal2.getNum1() + " - " + cal2.getNum2() + "=" + cal2.Mul());
+                    break;
+                case 4:
+                    System.out.println(cal2.getNum1() + " * " + cal2.getNum2() + "=" + cal2.Sub());
+                    break;
+                case 5:
+                    System.out.println(cal2.sin());
+                    break;
+            }
+            break;
+
+    }
+}
